@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+<h1>HTML DOM Events</h1>
+<h2>The oncanplaythrough</h2>
+
+<video controls oncanplaythrough="myFunction()">
+  <source src=" https://media.istockphoto.com/id/1402143391/video/futuristic-tunnel-acceleration-directly-through-this-scientific-wormhole-with-the-space.mp4?s=mp4-640x640-is&k=20&c=tP8mv4xP_3gQPUu1ur_K6uGuqhdiu1whvvgt6WctQFU=" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Can play through without stopping.";
+}
+</script>
+
+</body> 
+</html>

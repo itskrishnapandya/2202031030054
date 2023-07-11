@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">India Famous Satdium </h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://gujaratcricketassociation.com/wp-content/uploads/2021/01/about-motera-stadium.jpg" style="width:100%" height="500vh">
+  <img class="mySlides" src="https://www.lntecc.com/media/0iti3rwe/wankhede-cricket-stadium-in-mumbai-maharashtra-2.jpg?anchor=center&mode=crop&width=1920&height=720&rnd=132232309603230000" style="width:100%" height="500vh">
+  <img class="mySlides" src="https://cdn-wp.thesportsrush.com/2023/04/1a0be7bf-ekana-stadium-ipl-ticket-price.jpg?w=1080&q=60" style="width:100%" height="500vh">
+  <img class="mySlides" src="https://www.hindustantimes.com/ht-img/img/2023/02/14/550x309/Since-2016--four-matches-at-Dharamshala-have-been-_1676401077429.jpg" style="width:100%" height="500vh">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
